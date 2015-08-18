@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Presentation Gitlab</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/impress.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="impress">
@@ -13,23 +13,77 @@
             are presented with a simplified version of this presentation.</p>
         <p>For the best experience please use the latest Chrome, Safari, or Firefox 10.</p>
     </div>
-    <header class="step">
-        <h1>Andi's Presentation</h1>
-    </header>
+    <!--<header id="bored" class="step" data-scale="1000">-->
+        <!--<img src="img/gitlab-taniki.png" alt="Gitlab Taniki logo">-->
+    <!--</header>-->
 
-    <section class="step" data-y="600">
-        <p>Here's something cool on slide 2</p>
+    <!--<section class="step" data-x="300000" data-rotate-y="90" data-scale="1000">-->
+        <!--<img src="img/github-logo.jpg" alt="Github Octocat logo">-->
+    <!--</section>-->
+
+    <!--<section class="step" data-y="300000" data-rotate-x="90" data-scale="1000">-->
+        <!--<img src="img/git-logo.png" alt="Git logo">-->
+    <!--</section>-->
+
+    <section id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <h1>Git - La génèse</h1><br/>
+        <ol>
+            <li>Depuis 2002 <a href="https://fr.wikipedia.org/wiki/Noyau_Linux">noyau linux</a> versionné sous <a href="https://fr.wikipedia.org/wiki/BitKeeper">Bitkeeper</a></li>
+            <li>Produit payant en version community</li>
+            <li><a href="https://fr.wikipedia.org/wiki/Andrew_Tridgell">Andrew Tridgell</a> (<a href="https://fr.wikipedia.org/wiki/Open_Source_Development_Labs">ODSL</a>) accusé de rétro-ingénierie</li>
+            <li>En avril 2005 la licence community est révoquée</li>
+            <li>En réaction <a href="https://fr.wikipedia.org/wiki/Linus_Torvalds">Linus Torvals</a> crée <b>Git</b> en 2 mois et demi</li>
+        </ol><br/><br/><br/><br/>
+        <p><i>"I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'."</i></p>
     </section>
 
-    <section class="step" data-x="1200" data-y="600" data-rotate="180">
-        <p>Here's something also cool on slide 3</p>
+    <section class="step slide" data-x="0" data-y="-1500">
+        <h1>Git - Les bienfaits</h1><br/>
+        <ol>
+            <li>Logiciel libre (<i>GNU GPL v2</i>)</li>
+            <li>VCS décentralisé</li>
+            <li>Tout l'historique en local</li>
+            <li>Rapide : commandes exécutées localement</li>
+            <li>Repos peu volumineux</li>
+            <li>Peu invasif : fichiers git rassemblés sous <i>.git</i></li>
+        </ol>
     </section>
-    <footer class="step" data-x="1200" data-scale="0.5">
-        <p>Visit me at <a href="http://www.andismith.com" target="_blank">AndiSmith.com</a></p>
+
+    <section class="step slide" data-x="1000" data-y="-1500">
+        <h1>Github - La révolution</h1><br/>
+    </section>
+
+    <section class="step slide" data-x="2000" data-y="-1500">
+        <h1>Github - La révolution</h1><br/>
+
+    </section>
+
+    <section class="step slide" data-x="3000" data-y="-1500">
+        <h1>Gitlab - Le petit frère</h1><br/>
+    </section>
+
+    <section class="step slide" data-x="4000" data-y="-1500">
+        <h1>Git ecosystème - Un lexique</h1><br/>
+            <b>Commit</b> : validation des modifications de fichiers vers le référenciel <br/>
+            <b>Push / Pull</b>: synchronisation avec un référentiel distant <br/>
+            <b>Branch / Tag</b> : <br/>
+            <b>Fork</b> : copie complète d'un référentiel <br/>
+            <b>Pull request</b> : <br/>
+            <b>Forge</b> : système de gestion de développement collaboratif de logiciel
+    </section>
+
+    <footer class="step slide" data-x="1200" data-scale="0.5">
+        <h1>Ressources</h1><br/>
+        <p>Présentation disponible sur <a href="http://mfilotto.github.io/gitlab-presentation" target="_blank">Github.com</a></p>
+        <p><a href="https://www.atlassian.com/git/" target="_blank">Getting Git Right Atlassian</a></p>
+        <p><a href="https://www.atlassian.com/pt/git/" target="_blank">Git Tutorials Atlassian</a></p>
     </footer>
-    <div id="overview" class="step" data-x="600" data-y="300" data-scale="2"></div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.js"></script>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script src="lib/impress.js"></script>
 <script>impress().init();</script>
 </body>
 </html>
