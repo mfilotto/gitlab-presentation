@@ -724,3 +724,7 @@ a:focus {
     top: 1rem;
     right: 1rem;
 }
+
+.lexicon {
+    font-size: 23px;
+}
